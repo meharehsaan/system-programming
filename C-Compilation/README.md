@@ -88,7 +88,7 @@ Also used on many embedded systems.
 
 <br>
 
-### ELF Format
+### [ELF Format](http://www2.cs.uidaho.edu/~krings/CS270/Notes.S10/270-F10-04.pdf)
 ---
 
 - **Executable** and **Linking** Format is binary format, which is used in
@@ -99,6 +99,30 @@ disk, created as a result of **compiling** and **linking**.
 also enhances **dynamic** loading of modules at run time.
 - An **executable** file using the ELF format consist of ELF Header,
 Program Header Table and Section Header Table.
+
+The ELF format is designed to be **flexible**, **extensible**, and **platform**-**independent**, allowing it to support various architectures and operating systems. It has replaced older formats like "a.out" and "COFF" on many Unix systems.
+
+### Key components of the ELF format include
+---
+
+**Header** The ELF file starts with a fixed-size header that contains basic information about the file, such as the architecture, the type of the file (executable, shared object, etc.), entry point address, and other essential details.
+
+**Sections** ELF files are divided into multiple sections, each serving a specific purpose. Common sections include:
+
+- .**text** Contains the executable code (machine instructions).
+- .**data** Holds initialized data used during program execution.
+- .**bss** Contains uninitialized data (it's not stored in the file but reserved for the program at runtime).
+- .**rodata** Stores read-only data (constants, strings, etc.).
+- .**symtab** Symbol table, which provides information about functions and variables used in the program.
+- .**strtab** String table, which contains strings used in the symbol table and other parts of the file.
+
+**Segments** Segments are used for specifying memory mapping and alignment. Each segment corresponds to one or more sections and defines how the operating system should map the file's contents into memory during execution.
+
+**Dynamic** **Section** Contains information needed for dynamic linking, such as shared library dependencies and runtime relocation instructions.
+
+**Symbol** **Table** Provides information about symbols (functions, variables, etc.) defined and referenced within the ELF file.
+
+**Relocation** If the ELF file is relocatable (e.g., an object file), it contains relocation entries, specifying how to modify the code and data to reflect the actual addresses during the linking process.
 
 <!-- ELF image -->
 
