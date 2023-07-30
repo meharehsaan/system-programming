@@ -136,11 +136,11 @@ The ELF format is designed to be **flexible**, **extensible**, and **platform**-
 Using these commands can view elf format of files.
 
 ```
-    readelf a.out
+    readelf a.out -h
 ```
 
 ```
-    objdump a.out
+    objdump a.out -d -M intel
 ```
 
 ```
