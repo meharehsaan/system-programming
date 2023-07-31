@@ -172,3 +172,6 @@ call _exit
 
 <br>
 
+## Links 
+
+- [Linking in C](https://github.com/meharehsaan/system-programming/blob/master/linking/README.md)
