@@ -1,0 +1,42 @@
+Source: cmatrix
+Section: misc
+Priority: optional
+Maintainer: Boyuan Yang <byang@debian.org>
+Standards-Version: 4.4.0
+Build-Depends:
+ console-setup-linux,
+ debhelper-compat (= 12),
+ kbd,
+ libncurses-dev,
+Rules-Requires-Root: no
+Homepage: https://github.com/abishekvashok/cmatrix
+Vcs-Git: https://salsa.debian.org/debian/cmatrix.git
+Vcs-Browser: https://salsa.debian.org/debian/cmatrix
+
+Package: cmatrix
+Architecture: any
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends},
+Recommends:
+ kbd,
+Suggests:
+ cmatrix-xfont,
+Description: simulates the display from "The Matrix"
+ Screen saver for the terminal based in the movie "The Matrix". It works in
+ terminals of all dimensions and have the following features:
+  * Support terminal resize.
+  * Screen saver mode: any key closes it.
+  * Selectable color.
+  * Change text scroll rate.
+
+Package: cmatrix-xfont
+Section: x11
+Architecture: all
+Depends:
+ ${misc:Depends},
+Recommends:
+ cmatrix,
+Description: X11 font for cmatrix
+ Console Matrix simulates the display from "The Matrix", this package provides
+ the font to run cmatrix in an xterm.

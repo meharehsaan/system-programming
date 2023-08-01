@@ -1,0 +1,22 @@
+From: Andrey Abramov <st5pub@yandex.ru>
+Date: Wed, 27 Mar 2019 18:22:01 +0300
+Subject: Fix #78
+
+Signed-off-by: Andrey Abramov <st5pub@yandex.ru>
+---
+ cmatrix.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/cmatrix.c b/cmatrix.c
+index 90284cb..ee13caf 100644
+--- a/cmatrix.c
++++ b/cmatrix.c
+@@ -667,7 +667,7 @@ if (console) {
+             for (i = y; i <= z; i++) {
+                 move(i - y, j);
+ 
+-                if (matrix[i][j].is_head && !rainbow) {
++                if (matrix[i][j].val == 0 || (matrix[i][j].is_head && !rainbow)) {
+                     if (console || xwindow) {
+                         attron(A_ALTCHARSET);
+                     }

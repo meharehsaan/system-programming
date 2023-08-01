@@ -1,0 +1,4 @@
+debian/cmatrix.desktop usr/share/applications/
+matrix.fnt matrix.psf.gz usr/share/consolefonts
+usr/bin
+usr/share/man

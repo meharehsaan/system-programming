@@ -1,0 +1,21 @@
+From: Boyuan Yang <byang@debian.org>
+Date: Tue, 7 May 2019 12:08:21 -0400
+Subject: cmatrix.1: Improvement on man page
+
+Last-Update: 2019-05-07
+---
+ cmatrix.1 | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/cmatrix.1 b/cmatrix.1
+index 2dbf23e..ff081b8 100644
+--- a/cmatrix.1
++++ b/cmatrix.1
+@@ -1,6 +1,6 @@
+ .TH CMatrix 1 "Mon May 3 1999"
+ .SH NAME
+-CMatrix
++CMatrix \- simulates the display from "The Matrix"
+ .SH SYNOPSIS
+ .B cmatrix
+ [\-abBflohnsmVx] [\-u update] [\-C color]
