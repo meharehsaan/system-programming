@@ -79,15 +79,15 @@ foo() , the sequence of steps for creation of
 FSF of foo()
 
 - Arguments are pushed on the stack, in reverse
-order
+order.
 - Contents of rip (return address) is also pushed on
-the stack
+the stack.
 - The contents of rbp containing starting address of
 main stack frame is saved on stack for later use,
 and rbp is moved to where rsp is pointing to
-create new stack frame pointer of function foo()
+create new stack frame pointer of function foo().
 - Space created for local variables by moving rsp
-down or to lower address
+down or to lower address.
 
 ### Limitations
 
