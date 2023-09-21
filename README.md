@@ -1,15 +1,64 @@
 # System Programming With Linux
 
 **System** Programming aims to produce software which provides services to computer **hardware**.
+
 - Disk **Defragmentor** etc
 
-**Application** Programming aims to produce softwares which provides services to the **user**. 
+**Application** Programming aims to produce softwares which provides services to the **user**.
+
 - **Browsers** and **Word** applicaton etc
+
+## Resources
+
+My Instructor
+
+- Sir Arif's Website [Link](http://arifbutt.me)
+- Sir Arif Butt System Programming Playlist [Link](https://www.youtube.com/playlist?list=PL7B2bn3G_wfC-mRpG7cxJMnGWdPAQTViW)
 
 ## Contents
 
+In this Repository [System Programming](https://github.com/meharehsaan/system-programming)
+
+- Introduction to `system` programming
+- C `compilation`: A system programming perspective.
+- Working of `Linkers`; Creating your own `Libraries`.
+- UNIX `make` Utility
+- GNU `auto tools` and `cmake`
+- `Exit handlers` and Resource Limits
+- `Stack` Behind the Curtain
+- `Heap` behind the Curtain
+- Design and code of UNIX `more Utility`
+- UNIX `File System` Architecture
+- UNIX `File` Management
+- Design and code of UNIX `ls Utility`
+- Programming `Terminal` Devices
+- `Process Management`
+- Design and code of `Daemon` Processes
+- Process `Scheduling` Algorithm
+- Design and code of UNIX `shell` Utility
+- Multi `Threaded` Programming
+- Overview of UNIX `IPC` and `Signals`
+- Design and code of `Signal handlers`
+- Programming UNIX `pipes`
+- Programming UNIX `Named` pipes
+- Message `Queues`
+- Programming with `Shared Memory`
+- `Memory Mapped` Files
+- `Synchronization` among Threads
+- Programming with `POSIX Semaphores`
+- `Socket` Programming 
+- Exploiting `Buffer Overflow` vulnerability
+
+## Additional Links
+
+- **Linux Utilites** ([Link](https://github.com/meharehsaan/linux-utilities))
+- **Operating System** ([Link](https://github.com/meharehsaan/operating-system))
+- **Assembly language** ([Link](https://github.com/meharehsaan/intelx86_64))
+- **Socket Programming** ([Link](https://github.com/meharehsaan/socketprogramming))
+- **Programming Concepts** ([Link](https://github.com/meharehsaan/progconcepts))
 
 ### SP AIMS
+
 ---
 
 - **Efficient Resource Management:** System programming aims to efficiently manage system resources such as memory, CPU, and I/O devices. This involves designing algorithms and data structures that optimize resource utilization.
@@ -35,6 +84,7 @@
 <br>
 
 ### System
+
 ---
 
 |    OS on Hardware     |
@@ -51,7 +101,7 @@
   - **File**
   - **Other** program
   - OS **itself**
-   
+
 <br>
 
 - After processing, the programs may have to write results
@@ -61,6 +111,7 @@ process asynchronously, i.e., not when the process asked
 for it, but at some later unpredictable time.
 
 ### OS Services
+
 ---
 
 - **File** Management
@@ -74,7 +125,8 @@ for it, but at some later unpredictable time.
 
 <br>
 
-### Service Request 
+### Service Request
+
 ---
 
 - By making **system call**
@@ -82,7 +134,7 @@ for it, but at some later unpredictable time.
 
 <br>
   
-#### System call 
+#### System call
 
 is the controlled entry point into the kernal code allowing a process to request kernal to perform a privieged operation.
 
@@ -95,4 +147,3 @@ unique number.
 - Each system call may have a set of arguments that specify
 information to be transferred from user space to kernel space and
 vice versa.
-
