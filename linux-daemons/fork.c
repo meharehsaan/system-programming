@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// ps -x | grep ./a.out 
+// ps -x | grep ./a.out
 // Us above command to find the process and kill then
 
 int fork();
