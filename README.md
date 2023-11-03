@@ -46,16 +46,8 @@ In this Repository [System Programming](https://github.com/meharehsaan/system-pr
 - `Memory Mapped` Files
 - `Synchronization` among Threads
 - Programming with `POSIX Semaphores`
-- `Socket` Programming 
+- `Socket` Programming
 - Exploiting `Buffer Overflow` vulnerability
-
-## Additional Links
-
-- **Linux Utilites** ([Link](https://github.com/meharehsaan/linux-utilities))
-- **Operating System** ([Link](https://github.com/meharehsaan/operating-system))
-- **Assembly language** ([Link](https://github.com/meharehsaan/intelx86_64))
-- **Socket Programming** ([Link](https://github.com/meharehsaan/socketprogramming))
-- **Programming Concepts** ([Link](https://github.com/meharehsaan/progconcepts))
 
 ### SP AIMS
 
@@ -90,7 +82,7 @@ In this Repository [System Programming](https://github.com/meharehsaan/system-pr
 |    OS on Hardware     |
 | :-------------------: |
 |       **Users**       |
-|    **Applications**    |
+|   **Applications**    |
 | **AUI** ----- **API** |
 |   **OS** **Kernal**   |
 |     **Hardware**      |
@@ -105,10 +97,10 @@ In this Repository [System Programming](https://github.com/meharehsaan/system-pr
 <br>
 
 - After processing, the programs may have to write results
-to a shared resource, which other processes are also
-writing, or results may need to be delivered to another
-process asynchronously, i.e., not when the process asked
-for it, but at some later unpredictable time.
+  to a shared resource, which other processes are also
+  writing, or results may need to be delivered to another
+  process asynchronously, i.e., not when the process asked
+  for it, but at some later unpredictable time.
 
 ### OS Services
 
@@ -139,11 +131,26 @@ for it, but at some later unpredictable time.
 is the controlled entry point into the kernal code allowing a process to request kernal to perform a privieged operation.
 
 - A system call changes the processor state from user mode to
-kernel mode, so that the CPU can access protected kernel memory.
+  kernel mode, so that the CPU can access protected kernel memory.
 
 - The set of system calls is fixed. Each system call is identified by a
-unique number.
+  unique number.
 
 - Each system call may have a set of arguments that specify
-information to be transferred from user space to kernel space and
-vice versa.
+  information to be transferred from user space to kernel space and
+  vice versa.
+
+## Additional Links
+
+- [Learning C](https://github.com/meharehsaan/learning-c)
+- [Operating System](https://github.com/meharehsaan/operating-system)
+- [Assembly x86-64](https://github.com/meharehsaan/intelx86-64)
+- [Socket Programming](https://github.com/meharehsaan/socketprogramming)
+- [Buffer Overflow](https://github.com/meharehsaan/bufferoverflow)
+- [Linux Utilities](https://github.com/meharehsaan/linux-utilities)
+- [Programming Concepts](https://github.com/meharehsaan/progconcepts)
+- [Resources](https://github.com/meharehsaan/resources)
+
+---
+
+Best Regards - [Mehar Ehsaan](https://github.com/meharehsaan)
